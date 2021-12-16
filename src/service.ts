@@ -27,8 +27,8 @@ export class EncryptClass{
     const location = { teste: "teste de mesagem criptografada"}
     const {privateKey, publicKey} = this.generateKeys();  
     const encryptLocation = crypto.privateEncrypt({
-        key: privateKey,
-        passphrase: pass,
+      key: privateKey,
+      passphrase: pass,
     }, Buffer.from(JSON.stringify(location), 'utf-8')).toString('base64')
     return { data: encryptLocation, publicKey: publicKey }
   }
