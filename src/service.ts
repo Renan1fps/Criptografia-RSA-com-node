@@ -30,7 +30,7 @@ export class EncryptClass{
       key: privateKey,
       passphrase: pass,
     }, Buffer.from(JSON.stringify(location), 'utf-8')).toString('base64')
-    return { data: encryptLocation, publicKey: publicKey }
+    return { data: encryptLocation, publicKey: publicKey //sem retorno da Key }
   }
 
   static async decript(data: any, key: any) {
