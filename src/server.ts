@@ -25,4 +25,4 @@ app.post('/decrypt', async (req, res) => {
  res.send(response);
 })
 
-app.listen(8080, ()=> console.log("Running"));
+app.listen(8080, () => console.log("Running"));
